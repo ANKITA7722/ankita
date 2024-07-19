@@ -14,5 +14,5 @@ class ArithmaticOperator{
             System.out.println("Temp char =" + (int)tempChar);
             System.out.println("Small A =" + smallA);
 
-        }
+        }t
 }

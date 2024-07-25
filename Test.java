@@ -9,18 +9,22 @@ import java.util.Scanner;
 class Test{
         public static void main(String[]args){
            Scanner scanner = new Scanner(System.in);
-            System.out.println("enter  math marks ");
+            System.out.println("enter  math marks");
             double mathmarks = scanner.nextInt(); // not following naming convention, wrong data type
 
-            System.out.println("enter  scince marks ");
+            System.out.println("enter  scince marks");
             double scincemarks = scanner.nextInt(); //non meaningful name
 
-            System.out.println("enter  bio marks ");
+            System.out.println("enter  bio marks");
             double biomarks = scanner.nextInt();
 
             double total = (mathmarks+scincemarks+biomarks/3.0); // wrong syntax for calculation, as well as int /int
             // float must be avoided, until not mentioned
-            if( total >= 90){// improper spacing
+             if(total < 33){
+
+                System.out.println("dont calculate marks");
+                
+             }else if( total >= 90){// improper spacing
 
                 System.out.println("gred A");
 
@@ -35,10 +39,11 @@ class Test{
             }else if(total >= 60 && total <= 33){
 
                 System.out.println("gred D");
+
             }else{
 
                 System.out.println("fail");
             }
-
+            
         }
 }

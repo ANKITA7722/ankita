@@ -1,0 +1,127 @@
+Date:01/10/2024 day:-tuesday
+------------------------------------------
+FILENAME:-App.jsx:-
+
+import EmpDesingn from "./EmpDesign"
+import EmpData from "./EmpData"; 
+const App =()=>{
+  const ans= EmpData.map((key)=> <EmpDesingn
+  eno={key.empno}
+  nm={key.name}
+  dept={key.dept}
+  sal={key.salary}
+  />)
+  return(
+    <>
+    <table border={2}>
+    <tr>
+      <th>Employeenumber</th>
+      <th>name</th>
+      <th>deparment</th>
+      <th>salary</th>
+    </tr>
+    {ans}
+    </table>
+    </>
+  )
+  
+}
+export default App;
+--------------------------------------------------------------
+FILENAME:-EmpDesign.jsx:-
+const EmpDesingn=(props)=>{
+    return(
+        <>
+        <tr>
+        <th>{props.eno}</th>
+        <th>{props.nm}</th>
+        <th> {props.dept}</th>
+        <th> {props.sal}</th>
+        </tr>
+        </>
+    )
+}
+export default EmpDesingn;
+------------------------------------------------------------
+FILENAME:-EmpData.jsx:-
+const EmpData = [
+    {
+      "empno":121,
+      "name":"ankita",
+      "dept":"finance",
+      "salary":50000
+
+    },
+    {
+      "empno":121,
+      "name":"ankita",
+      "dept":"finance",
+      "salary":50000
+
+    },
+    {
+      "empno":121,
+      "name":"ankita",
+      "dept":"finance",
+      "salary":50000
+
+    },
+    {
+      "empno":121,
+      "name":"ankita",
+      "dept":"finance",
+      "salary":50000
+
+    },
+    
+  ]
+  export default EmpData;
+-------------------------------------------------------------------------------------------------------------------------------
+date:-02/10/2024 day:-
+
+const App=()=>{
+
+    const display=(nm)=>{
+      alert(`my name is:${nm}`)
+    }
+  
+  return(
+    <>
+      <h1>welcom to cybrom</h1>
+      <button onClick={()=>{display("ankita bobde")}}>click her</button>
+    </>
+  )
+}
+export default App;
+----------------------------------------
+const App=()=>{
+
+    const display=(course,e)=>{
+      alert(`my course : ${course} event type: ${e.type}`)
+    }
+  
+  return(
+    <>
+      <h1>welcom to cybrom</h1>
+      <button onMouseOver={(e)=>{display("FullStack",e)}}>click her</button>
+    </>
+  )
+}
+export default App;
+----------------------------------------------
+const App=()=>{
+
+    const display=(nm,e)=>{
+      let name=e.target.name;
+      let val=e.target.value;
+      alert("Name :" + name  +"value :" + val);
+    }
+  
+  return(
+    <>
+      <h1>welcom to cybrom</h1>
+      <button name="btn1" value="mybtn" onMouseOver={(e)=>{display("ankita",e)}}>click her</button>
+    </>
+  )
+}
+export default App;

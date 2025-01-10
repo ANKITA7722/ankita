@@ -1,0 +1,75 @@
+// import Cybrome from "./Cybrome";
+// import Footer from "./Footer";
+// import Header from "./Header";
+//import Student from "./Student";
+// import College from "./College";
+//  const Name = "patel college";
+//  const st = "60";
+//  const add = "bhopal";
+import Cybrome from "./Cybrome";
+const Student={
+    
+    "rollno":121,
+    "name" : "ankita",
+    "city" : "bhopal",
+    "fees" : 999
+}
+
+const App=()=>{
+    return(
+    <>
+    <h1>Welcome !!!</h1>
+    <Cybrome
+    sturno = {Student.rollno}
+    stuname={Student.name}
+    stucity={Student.city}
+    stufs={Student.fees}
+    /> 
+    </>
+    )
+}
+export default App;
+
+
+2:-css Slyling
+
+const App=()=>{
+    return(
+    <>
+    <h1 style={{color:"red",
+        textDecoration:"underline",fontFamily:"arial"}}>
+        Welcome !!!</h1>
+
+        <h2 style={{color:"green",
+        textDecoration:"Wevy",fontFamily:"verdana"}}>
+        We are Developer!!!</h2>
+
+        <h3 style={{color:"blue",
+        textDecoration:"underline",fontSize:"20px"}}>
+        Hellow Cybrom !!!</h3>
+    
+    </>
+    )
+}
+export default App;
+
+2nd Mathode:-
+
+const data={
+    color:"green",
+        textDecoration:"underline",
+        fontFamily:"arial",
+        background:"pink"
+    }
+
+const App=()=>{
+    return(
+    <>
+    <h1 style={data}>
+        Welcome !!!</h1>
+
+    
+    </>
+    )
+}
+export default App;

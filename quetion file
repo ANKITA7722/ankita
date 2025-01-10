@@ -1,0 +1,276 @@
+Conditional Statement
+1.Write a program that accept an integer form user and print positive, if the integer is positive.
+
+2.Write a program that accept two numbers from the user and print equals if the numbers are equal.
+
+3.Write a program to accept three numbers from user and print equals if the numbers are equal.
+
+4.Write a program to accept three numbers from user and print all are divisible by 9, if all three numbers are divisible by 9.
+
+5.Write a program to accept an integer from user and print positive, if the number is positive. Otherwise, print negative. Considering number can never be equal to zero.
+
+6.Write a program to accept an integer from user and print even if the number is even, Otherwise print odd.
+
+7.Write a program to accept an integer from user. If the number is even make it odd and print. If the number is odd make it even and print.
+
+8.Write a program to accept two numbers from user, if the both the numbers are positive, get the remainder of the division by 5 for both the numbers. 
+If remainder of both the division are equal print numbers are equal, otherwise number are not equal. 
+If one or both the numbers are negative, print calculation not possible.
+
+9.Write a program that print the current balance of the account, ask the user to enter the withdrawal amount.
+
+if withdrawal amount is less than current balance,
+    deduct the withdrawal amount form the current balance, if current balance after deduction is less than 500 INR, deduct penalty of 50 INR and print current balance and penalty.
+    otherwise, print the current balance.
+If withdrawal amount is greater than current balance, print insufficient funds.
+Sample run 1
+Current balance = 5000
+Enter withdrawal amount - 4600
+Current balance = 350
+Penalty = 50
+
+Sample run 2
+Current balance = 5000
+Enter withdrawal amount - 4500
+Current balance = 500
+
+Current balance = 5000
+Enter withdrawal amount - 5600
+insufficient funds
+
+10.Pick the odd one out - Write a program to accept four numbers from user and print the odd one among them.
+
+Number can be odd among others in following scenario:
+   if three numbers are equal, then the different one is odd one among them.
+   if three number are even, then the different one is odd one among them.
+   if three number are odd, then the different one is odd one among them.
+   if all are different, even or odd, then print no number is odd one among them.
+
+
+11.Write a program to accept the annual income from the user and calculate tax based of the below conditions:
+
+In each case provide standard deduction of 50,000 INR, calculate taxable income by subtracting 50,000 form annual income.
+  if the taxable income is:
+       less than equal to 3,00,000 INR tax rate will be 0%.
+       greater than 3,00,000 INR and less than or equal to 5,00,000 INR tax rate will be 5%.
+       greater than 5,00,000 INR and less than or equal to 10,00,000 INR tax rate will be 15%.
+       greater than 10,00,000 INR and less than or equal to 15,00,000 INR tax rate will be 20%.
+       greater than 15,00,000 INR and less than or equal to 25,00,000 INR tax rate will be 25%.
+       greater than 25,00,000 INR tax rate will be 30%.
+  On the basis of the condition calculate tax amount and print.
+
+12.Write a program to accept birth year of user in YYYY format (like 1983) and print the chinese zodiac of the user.
+
+Chinese zodiac is represented by an animal sign as follows:
+0: monkey
+1: rooster
+2: dog
+3: pig
+4: rat
+5: ox
+6: tiger
+7: rabbit
+8: dragon
+9: snake
+10: horse
+11: sheep
+To get the corresponding value modulo-division year by 12
+
+
+
+
+loop quetions:-
+
+While Loop Practice
+1.Write a program to print all the digits of a given number.
+
+Sample 
+input - 1234
+output - 
+4
+3 
+2
+1
+Explanation
+- get remainder of input to get last digit - input % 10 will give 4 as remainder
+- now last was extracted, discard the last digit from the input - input = input / 10 will dicard the last digit 4
+- repeat the process till input become zero.
+
+digit = input % 10;
+input = input / 10;
+print the digit
+
+2.Write a program to print sum of all the digits of the given number. Accept number as input from user.
+
+Sample run
+input - 12345;
+output - 15
+
+Explanation
+   - get digits from number one by one - digit = input % 10;
+   - add digit to sum one by one - sum = sum + digit;
+   - now discard the last digit - input = input / 10;
+   - repeat the process till input become zero  
+sum = 0;
+iteration 1
+input = 12345;
+digit = input % 10; // 12345 % 10 -> 5 
+sum = sum + digit; // 0 + 5 -> 5
+input = input / 10; // 12345 / 10 -> 1234 
+
+iteration 2
+input = 1234; // now the input become, 1234, due to first iteration
+digit = input % 10; // 1234 % 10 -> 4 
+sum = sum + digit; // 5 + 4 -> 9
+input = input / 10; // 1234 / 10 -> 123 
+
+iteration 3
+input = 123; // now the input become, 123, due to last iteration
+digit = input % 10; // 123 % 10 -> 3 
+sum = sum + digit; // 9 + 3 -> 12
+input = input / 10; // 123 / 10 -> 12
+
+iteration 4
+input = 12; // now the input become, 12, due to last iteration
+digit = input % 10; // 12 % 10 -> 2 
+sum = sum + digit; // 12 + 2 -> 14
+input = input / 10; // 12 / 10 -> 1
+
+iteration 5
+input = 1; // now the input become, 1, due to last iteration
+digit = input % 10; // 1 % 10 -> 1 
+sum = sum + digit; // 14 + 1 -> 15
+input = input / 10; // 1 / 10 -> 0
+
+ 
+3.Write a program that calculates the sum of all even numbers from 1 to a given number N and print the sum. Accept the number N from user.
+
+4.Implement a program that computes the factorial of a given number N using a loop and print the factorial. Accept the number N from user.
+
+   Sample
+   N = 5
+   output = 120
+   Explaination
+   5 factorial => 5 * 4 * 3 * 2 * 1 => 120
+5.Write a program that checks if a given number N is prime if yes print number N is prime number otherwise print number N is not a prime number. Accept the number N from user.
+
+6.Write a program to print the first N numbers in the Fibonacci sequence. Accept the number N from user. Constrain N >= 0 and N <= 20. (keep value of N small. )
+
+Sample 
+N = 10
+output = 0, 1, 1, 2, 3, 5, 8, 13, 21,34
+Explanation
+first trem is 0 (known)
+second trem is 1 (known)
+third term = 0 + 1 = 1
+fourth term = 1 + 1 = 2
+so on.... next term is sum of last two terms
+
+
+What is Fibonacci Series?
+
+The Fibonacci series is the sequence of numbers (also called Fibonacci numbers),
+where every number is the sum of the preceding two numbers, such that the first two terms are '0' and '1'.
+In some older versions of the series, the term '0' might be omitted. 
+
+A Fibonacci series can thus be given as, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, . . . 
+It can thus be observed that every term can be calculated by adding the two terms before it.
+
+Given the first term, F0 and second term, F1 as '0' and '1' respectively,
+the third term here can be given as, 
+F0 = 0, F1 = 1,
+F2 = F0 + F1
+F2 = 0 + 1 = 1
+
+Similarly,
+
+F3 = 1 + 1 = 2
+F4 = 2 + 1 = 3
+F5 = 2 + 3 = 5
+F6 = 3 + 5 = 8
+F7 = 5 + 8 = 13
+and so on
+
+Reference - cuemath.com
+
+7.Write a program to print the sum of first N numbers in the Fibonacci sequence. Accept the number N from user. Constrain N >= 0 and N <= 20. (keep value of N small. )
+
+N = 8
+output = 33
+Explaination 
+ 0, 1, 1, 2, 3, 5, 8, 13 fibbonacci series for N = 8
+
+sum = 0 + 1 + 1 + 2 + 3 + 5 + 8 + 13 = 33 
+
+
+8.Write a program to check if a given three-digit number N is an Armstrong number if yes, print Armstrong number otherwise print Not an Armstrong number. Accept the three-digit number N from user.
+Sample 
+Input N = 371
+output = Armstrong number
+Explanation :
+
+An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself.
+
+33 + 73 + 13
+
+27 + 343 + 1 => 371
+
+9.Generate the multiplication table for a given number N up to 10. Accept the number N from user.
+
+10.Write a program to calculate numberpower (number raised to the power) using a loop. Accept the number and power from user.
+
+Sample
+
+number = 2, power = 5
+
+output = 32
+
+Explanation
+
+25 = 32
+
+
+
+
+
+Loops Practice Questions
+1.Write a program to sum all the entered value until user enter 0 to stop.
+2.Write a program to check all the values entered by user, if the entered value is even print, if the entered value is odd print odd, if the entered value is 0 stop.
+3.Write a program to print the sum of all the even values entered by user until user enter 0 to stop.
+4.Write a program to calculate sum of all the values entered also count the number of values entered by user, stop when user enter 0. Print the sum of the values and count.
+5.Write a program to print numbers starting form 1 to 20.
+6.Write a program to print all the odd number form 1 to 20. Hint check i % 2 != 0 and print i if it is odd.
+7.Write a program which accept a magic number form the user, print winner and stop if user entered magic number. In this particular question magic number is the question number. :-)
+8.Write a program which accept a magic number form the user, print winner and stop if user entered magic number otherwise print try again. Also stop when user enter 0. In this particular question magic number is the question number. :-)
+pic
+
+9.Write a program to print all the numbers divisible by 5, from 1 to 100.
+Sample output
+5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 
+10.Write a program which accepts the starting point and end point from the user and print the sum of all the values between the starting point and end point. Starting point is inclusive and end point is exclusive.
+Sample run
+enter the starting point - 10
+enter the end point - 15
+sum = 60
+
+Explaination:
+sum all the values between 10 to 15, as starting point is inclusive 
+10 + 11 + 12 + 13 + 14
+15 is not considered for sum as loop must iterate < 15
+so the result is 60
+
+Hint:
+- i should be initialized with stating point 
+- i should be less than end point
+11.Write a program which accepts the starting point and end point from the user and print the sum and count of all the even values between the starting point and end point. Starting point and end point both are inclusive.
+Sample run
+enter the starting point - 10
+enter the end point - 20
+sum = 90
+count = 6
+
+
+Explaination:
+sum all the even values between 10 to 20, as starting point and end point both are inclusive 
+10 + 12 + 14 + 16 + 18 + 20
+so the result is 90, and count is 6

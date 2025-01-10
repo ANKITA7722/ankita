@@ -1,0 +1,369 @@
+node filename( for run)
+
+
+nodemon
+localhost:9000
+
+
+
+PS C:\Users\hp\Desktop\NodeJs> nmp install -g nodemon
+nmp : The term 'nmp' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, 
+verify that the path is correct and try again.
+At line:1 char:1
++ nmp install -g nodemon
++ ~
+    + CategoryInfo          : ObjectNotFound: (nmp:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\hp\Desktop\NodeJs> 
+ *  History restored 
+
+PS C:\Users\hp\Desktop\NodeJs> node index.js
+file:///C:/Users/hp/Desktop/NodeJs/index.js:1
+const http=require("http");
+           ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\hp\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/hp/Desktop/NodeJs/index.js:1:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+    at async loadESM (node:internal/process/esm_loader:28:7)
+    at async handleMainPromise (node:internal/modules/run_main:113:12)
+
+Node.js v20.11.1
+PS C:\Users\hp\Desktop\NodeJs> 
+ *  History restored 
+
+const http=require("http");
+           ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\hp\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+    at async loadESM (node:internal/process/esm_loader:28:7)
+    at async handleMainPromise (node:internal/modules/run_main:113:12)
+
+Node.js v20.11.1
+PS C:\Users\hp\Desktop\NodeJs> nodemon
+nodemon : File C:\Users\hp\AppData\Roaming\npm\nodemon.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see         
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ nodemon
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+file:///C:/Users/hp/Desktop/NodeJs/index.js:1
+const http=require("http");
+           ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\hp\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/hp/Desktop/NodeJs/index.js:1:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+    at async loadESM (node:internal/process/esm_loader:28:7)
+    at async handleMainPromise (node:internal/modules/run_main:113:12)
+
+Node.js v20.11.1
+            ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\hp\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/hp/Desktop/NodeJs/index.js:1:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+    at async loadESM (node:internal/process/esm_loader:28:7)
+    at async handleMainPromise (node:internal/modules/run_main:113:12)
+
+Node.js v20.11.1
+PS C:\Users\hp\Desktop\NodeJs> cd 
+PS C:\Users\hp\Desktop\NodeJs> cd 
+file:///C:/Users/hp/Desktop/NodeJs/index.js:1
+const http= require("http");
+            ^
+
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'C:\Users\hp\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///C:/Users/hp/Desktop/NodeJs/index.js:1:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:218:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:329:24)
+    at async loadESM (node:internal/process/esm_loader:28:7)
+    at async handleMainPromise (node:internal/modules/run_main:113:12)
+
+Node.js v20.11.1
+PS C:\Users\hp\Desktop\NodeJs> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See npm help init for definitive documentation on these fields
+and exactly what they do.
+
+Use npm install <pkg> afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (nodejs)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\hp\Desktop\NodeJs\package.json:
+
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+PS C:\Users\hp\Desktop\NodeJs> npm i express
+added 65 packages, and audited 66 packages in 11s
+
+13 packages are looking for funding
+  run npm fund for details
+
+found 0 vulnerabilities
+PS C:\Users\hp\Desktop\NodeJs> npm i nodemon
+
+added 29 packages, and audited 95 packages in 12s
+
+17 packages are looking for funding
+  run npm fund for details
+
+found 0 vulnerabilities
+PS C:\Users\hp\Desktop\NodeJs> node index.js
+
+
+
+npx nodemon index.js // if you content changes this cmd work 
+
+
+
+inbuilt
+
+
+npm i express(ecpress insttall)
+8080-9000
+
+
+====================================================================================================================
+
+const http= require("http");
+http.createServer((req,res)=>{
+    res.write("<h1>this is   frfffff    jjjjjj       kkkkkk    mmmmm     lllll Nodejs!!!");
+    res.end();
+
+}).listen(9000);
+
+
+ npx nodemon index.js(if i change)
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+PS C:\Users\hp\Desktop\NodeJs> npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See npm help init for definitive documentation on these fields
+and exactly what they do.
+
+Use npm install <pkg> afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (nodejs)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\hp\Desktop\NodeJs\package.json:
+
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+PS C:\Users\hp\Desktop\NodeJs>
+>> npm i express
+
+added 65 packages, and audited 66 packages in 47s
+
+13 packages are looking for funding
+  run npm fund for details
+
+found 0 vulnerabilities
+PS C:\Users\hp\Desktop\NodeJs> nodemon <filename> (for run)
+orr 
+npx nodemon index.js
+====================================================================================================================
+
+
+
+git config --global user.email "bobdeankita24@gmail.com"
+
+Date:-
+# bootstrap ke jariye images lagana:-
+
+
+import img1 from "./images/img1.jpg";
+import img2 from "./images/img2.jpg";
+import img3 from "./images/img3.jpg";
+
+const App=()=>{
+    return(
+    <>
+    <img src={img1} />//static path
+    <img src={img2} />
+    <img src={img3} />
+
+    </>
+    )
+}
+export default App;
+
+public folder me images lagane ka tarika 2nd method:-
+const App=()=>{
+    return(
+    <>
+    <img src="public/images/img1.jpg"  height="200px" width="200px" />&nbsp
+
+    <img src="public/images/img3.jpg"  height="200px" width="200px"/>
+   
+    </>
+    )
+}
+export default App;
+
+
+app.jsx:-
+import Carousel from 'react-bootstrap/Carousel';
+
+ import img1 from "./images/img1.jpg";
+ import img2 from "./images/img2.jpg";
+ import img3 from "./images/img3.jpg";
+
+
+
+const App=()=>{
+    return(
+    <>
+   
+   <Carousel>
+      <Carousel.Item>
+        {/* image1 */}
+        <img src={img1} width={"100%"}/>
+
+
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        {/* img2 */}
+      <img src={img2 } width={"100%"}/>
+
+
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        
+      <img src={img3 } width={"100%"} />
+
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+
+
+    </>
+    )
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+<Navbar bg="primary" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
+   <Carousel>
+      <Carousel.Item>
+        {/* image1 */}
+        <img src={img1} width={"100%"}/>
+
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        {/* img2 */}
+      <img src={img2 } width={"100%"}/>
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>  
+      <img src={img3 } width={"100%"} />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+
